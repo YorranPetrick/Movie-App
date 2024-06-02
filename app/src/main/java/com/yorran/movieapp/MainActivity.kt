@@ -23,11 +23,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         mainBiding.loginBtn.setOnClickListener{
-            startActivity(Intent(this, NewAccountActivity::class.java))
             Toast.makeText(this, "BTN clicado", Toast.LENGTH_LONG).show()
         }
 
         mainBiding.nwwAccontBtn.setOnClickListener{
+            startActivity(Intent(this, NewAccountActivity::class.java))
             Toast.makeText(this, "BTN clicado", Toast.LENGTH_LONG).show()
         }
     }

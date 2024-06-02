@@ -1,7 +1,21 @@
 <resources>
     <string name="app_name">Movie App</string>
+    <string name="signature">Signature</string>
     <string name="login_button_text">Login</string>
     <string name="new_account_button_text">New account</string>
     <string name="type_content">Movies, Shows, Entertainment, Anytime access</string>
     <string name="wellcome_login_page">Ultimate Destination\nfor Cinematic Adventure</string>
+    <string name="button_Next">Next</string>
+
+    <string name="text_free_card"><font color="white">Free</font>\n<font color="gray">One device</font></string>
+    <string name="text_plan_card"><font color="white">Plan</font>\n<font color="gray">All Time Acess</font></string>
+    <string name="value_free_card">$0,0/Mon</string>
+    <string name="value_plan_card">$3,0/Mon</string>
+
+
+    <string name="details_account"><b>What´s Included in Plan\n\n</b>
+        <item>• Whatch on 4 supported devices at a time.\n</item>
+        <item>• Whatch in Ultra HD.\n</item>
+        <item>• Unlimited live suports.\n</item></string>
+
 </resources>
