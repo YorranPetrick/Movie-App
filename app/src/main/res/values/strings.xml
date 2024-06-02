@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Movie App</string>
     <string name="login_button_text">Login</string>
+    <string name="new_account_button_text">New account</string>
     <string name="type_content">Movies, Shows, Entertainment, Anytime access</string>
     <string name="wellcome_login_page">Ultimate Destination\nfor Cinematic Adventure</string>
 </resources>
