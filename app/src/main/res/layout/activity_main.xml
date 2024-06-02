@@ -10,9 +10,9 @@
     tools:context=".MainActivity">
 
         <ImageView
-            android:layout_marginTop="80dp"
             android:layout_width="300dp"
             android:layout_height="300dp"
+            android:layout_marginTop="100dp"
             android:src="@drawable/movie_projector" />
 
         <TextView
@@ -36,6 +36,7 @@
             />
         
         <Button
+            android:id="@+id/login_btn"
             style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_marginTop="28dp"
             android:layout_width="wrap_content"
