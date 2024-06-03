@@ -6,6 +6,9 @@
     <string name="type_content">Movies, Shows, Entertainment, Anytime access</string>
     <string name="wellcome_login_page">Ultimate Destination\nfor Cinematic Adventure</string>
     <string name="button_Next">Next</string>
+    <string name="sign_in">Sign in to Movie App</string>
+    <string name="log_in_google">Log in with Google</string>
+    <string name="log_in_apple">Log in with Apple</string>
 
     <string name="text_free_card"><font color="white">Free</font>\n<font color="gray">One device</font></string>
     <string name="text_plan_card"><font color="white">Plan</font>\n<font color="gray">All Time Acess</font></string>
