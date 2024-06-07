@@ -3,22 +3,21 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true"
-    >
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 <LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/layoutSmallMain"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginTop="100dp"
             android:src="@drawable/movie_projector" />
 

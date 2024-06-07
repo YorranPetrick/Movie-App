@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".FormLoginActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/back_activity_foreground"
-        />
+        >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_activity_foreground"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help_foreground"
+            android:layout_marginStart="290dp"
+            />
+
+    </LinearLayout>
 
     <ImageView
         android:layout_width="150dp"
@@ -33,33 +54,21 @@
         android:textColor="@color/black"
         />
 
-    <Button
-        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+    <com.google.android.gms.common.SignInButton
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="@string/log_in_google"
-        android:paddingVertical="15dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="32dp"
+        tools:visibility="visible"
         />
 
-    <Button
-        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="@string/log_in_apple"
-        android:paddingVertical="15dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="15dp"
-        />
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="30dp"
         android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
         >
 
@@ -84,10 +93,11 @@
     </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
+        android:id="@+id/textFieldEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
+        app:boxStrokeColor="@color/blue_button"
 
         >
 
@@ -100,6 +110,49 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/blue_button"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_check_box"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/blue_button"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="15sp"
+        android:backgroundTint="@color/blue_button"
+        android:paddingVertical="15dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="15dp"
+        />
 
 
-</LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
