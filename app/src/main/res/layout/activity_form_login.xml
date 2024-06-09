@@ -12,37 +12,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:paddingHorizontal="10dp"
     android:gravity="center_horizontal"
     tools:context=".FormLoginActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
-        >
-
-        <ImageView
-            android:id="@+id/back_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/back_activity_foreground"
-            />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/help_foreground"
-            android:layout_marginStart="290dp"
-            />
-
-    </LinearLayout>
+        android:layout_marginEnd="165dp"
+        android:src="@drawable/back_activity_foreground"
+        />
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/film_reel"
-        android:layout_margin="40dp"
+        android:layout_marginBottom="40dp"
         />
 
     <TextView
@@ -149,6 +136,19 @@
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="15dp"
         />
+
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+
+        />
+
 
 
 

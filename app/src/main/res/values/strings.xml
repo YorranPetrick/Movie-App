@@ -5,6 +5,7 @@
     <string name="new_account_button_text">New account</string>
     <string name="type_content">Movies, Shows, Entertainment, Anytime access</string>
     <string name="wellcome_login_page">Ultimate Destination\nfor Cinematic Adventure</string>
+    <string name="forgot_password">Enter With your\n<font color="blue">CPF</font></string>
     <string name="button_Next">Next</string>
     <string name="sign_in">Sign in to Movie App</string>
     <string name="log_in_google">Log in with Google</string>
