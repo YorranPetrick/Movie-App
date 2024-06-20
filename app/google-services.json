@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250792121596",
+    "project_id": "app-filmes-b2231",
+    "storage_bucket": "app-filmes-b2231.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250792121596:android:b2d9495e07290e1505f379",
+        "android_client_info": {
+          "package_name": "com.yorran.movieapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmew3uY37VvfbHlsmvYbG2HeKF1vqrd-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
