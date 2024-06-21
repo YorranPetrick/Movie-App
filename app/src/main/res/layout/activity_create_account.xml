@@ -30,7 +30,7 @@
     <LinearLayout
         android:id="@+id/layout_create_account"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="600dp"
         android:orientation="vertical"
         android:background="@drawable/bottom_sheet"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,6 +40,7 @@
         >
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldFullNameLayout"
             style="?attr/textInputFilledStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,6 +50,8 @@
             android:visibility="visible"
             app:startIconDrawable="@drawable/person_foreground"
             app:boxBackgroundColor="@color/white"
+            app:helperText=""
+            app:helperTextTextColor="@color/red"
 
             >
 
@@ -64,6 +67,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFildEmailLayout"
             style="?attr/textInputFilledStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,6 +77,9 @@
             android:visibility="visible"
             app:startIconDrawable="@drawable/email_foreground"
             app:boxBackgroundColor="@color/white"
+            app:helperText=""
+            app:helperTextTextColor="@color/red"
+
 
             >
 
@@ -87,6 +94,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldPassowordLayout"
             style="?attr/textInputFilledStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,6 +104,9 @@
             android:visibility="visible"
             app:startIconDrawable="@drawable/passoword_foreground"
             app:boxBackgroundColor="@color/white"
+            app:helperText=""
+            app:helperTextTextColor="@color/red"
+
 
             >
 
@@ -105,11 +116,13 @@
                 android:layout_height="wrap_content"
                 android:hint="Passoword"
                 android:inputType="numberPassword"
+                android:maxLength="10"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldCpfLayout"
             style="?attr/textInputFilledStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,6 +132,8 @@
             android:visibility="visible"
             app:startIconDrawable="@drawable/cpf_foreground"
             app:boxBackgroundColor="@color/white"
+            app:helperText=""
+            app:helperTextTextColor="@color/red"
 
             >
 
@@ -132,6 +147,18 @@
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:text="Register"
+            android:backgroundTint="@color/blue_button"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginHorizontal="40dp"
+            />
 
 
 
