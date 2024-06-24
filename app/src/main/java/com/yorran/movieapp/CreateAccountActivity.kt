@@ -1,5 +1,6 @@
 package com.yorran.movieapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -28,6 +29,10 @@ class CreateAccountActivity : AppCompatActivity() {
             insets
         }
 
+        createAccountBinding.backBtn.setOnClickListener{
+            finish()
+        }
+
         createAccountBinding.btnRegister.setOnClickListener {
             val email = createAccountBinding.textFieldEmail.text.toString()
             val senha = createAccountBinding.textFieldPassoword.text.toString()
@@ -38,6 +43,8 @@ class CreateAccountActivity : AppCompatActivity() {
                 // Todos os campos estão preenchidos corretamente
                 clearFieldErrors()
                 registration(email, senha)
+                startActivity(Intent(this,FormLoginActivity()::class.java))
+                finish()
             } else {
                 // Exibir mensagens de erro específicas
                 showFieldErrors(nome, email, senha, cpf)

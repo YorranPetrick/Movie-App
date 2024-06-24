@@ -16,6 +16,16 @@
     tools:context=".CreateAccountActivity">
 
     <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_activity_foreground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        />
+
+    <ImageView
         android:id="@+id/persona_account"
         android:layout_width="match_parent"
         android:layout_height="350dp"
