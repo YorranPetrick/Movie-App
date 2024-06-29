@@ -69,7 +69,7 @@ class FormLoginActivity : AppCompatActivity() {
 
             }
         }.addOnFailureListener {
-
+            Toast.makeText(this, "Falha ao Realizar o Log In", Toast.LENGTH_LONG).show()
         }
 
 
@@ -80,16 +80,14 @@ class FormLoginActivity : AppCompatActivity() {
         formBiding.textFieldSenhaLayout.helperText = ""
     }
 
-     /*override fun onStart() {
+     override fun onStart() {
         super.onStart()
         //Verificando se um usuário está autenticaado com o currentUser
         val user = FirebaseAuth.getInstance().currentUser
-        //Toast.makeText(this, "$user", Toast.LENGTH_LONG).show()
-
 
         if (user != null) {
             startActivity(Intent(this, MovieMainActivity::class.java))
             finish()
         }
-    }*/
+    }
 }
