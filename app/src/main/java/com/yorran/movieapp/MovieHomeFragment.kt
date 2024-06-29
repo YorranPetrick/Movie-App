@@ -9,12 +9,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.yorran.movieapp.Adapter.AdapterCategoria
 import com.yorran.movieapp.databinding.FragmentMovieHomeBinding
 import com.yorran.movieapp.models.CategoriaFilmes
+import com.yorran.movieapp.models.ListaFilmes
 
 
 class MovieHomeFragment : Fragment() {
     private lateinit var fragmentMovieHomeBinding: FragmentMovieHomeBinding
     private lateinit var adapterCategorias: AdapterCategoria
     private var listaCategoria: MutableList<CategoriaFilmes> = mutableListOf()
+    //variavel para testar a lista de filmes
+    private var filmesLista : MutableList<ListaFilmes> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,9 +30,10 @@ class MovieHomeFragment : Fragment() {
         fragmentMovieHomeBinding.recycleViewCategorias.layoutManager = LinearLayoutManager(requireContext())
         fragmentMovieHomeBinding.recycleViewCategorias.setHasFixedSize(true)
         getCategorias()
+        getFilmes()
 
         // Criar e atribuir o adaptador ao RecyclerView
-        adapterCategorias = AdapterCategoria(requireContext(), listaCategoria)
+        adapterCategorias = AdapterCategoria(requireContext(), listaCategoria, filmesLista)
         fragmentMovieHomeBinding.recycleViewCategorias.adapter = adapterCategorias
 
         return fragmentMovieHomeBinding.root
@@ -43,5 +47,18 @@ class MovieHomeFragment : Fragment() {
         listaCategoria.add(primeiraCategoria)
         listaCategoria.add(segundaCategoria)
         listaCategoria.add(terceiraCategoria)
+    }
+
+    private fun getFilmes(){
+        val primeiroFilme = ListaFilmes(R.drawable.ic_launcher_background)
+        val segundoFilme = ListaFilmes(R.drawable.ic_launcher_background)
+        val terceiroFilme = ListaFilmes(R.drawable.ic_launcher_background)
+        val quartoFilme = ListaFilmes(R.drawable.ic_launcher_background)
+
+        filmesLista.add(primeiroFilme)
+        filmesLista.add(segundoFilme)
+        filmesLista.add(terceiroFilme)
+        filmesLista.add(quartoFilme)
+
     }
 }
