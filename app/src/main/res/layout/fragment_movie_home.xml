@@ -5,13 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".MovieHomeFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_Categorias"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Movie Home"
-        android:textSize="30sp"
-        android:textColor="@color/blue_button"
-        android:gravity="center"
+
         />
 
 </FrameLayout>
