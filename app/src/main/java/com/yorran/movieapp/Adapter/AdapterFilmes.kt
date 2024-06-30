@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.yorran.movieapp.databinding.FilmesItemBinding
 import com.yorran.movieapp.models.ListaFilmes
 
@@ -17,7 +18,7 @@ class AdapterFilmes (private val context: Context, private val listaFilmes: Muta
     }
 
     override fun onBindViewHolder(holder: FilmesViewHolder, position: Int) {
-        holder.capa.setImageResource(listaFilmes[position].capaFilmes!!)
+        Glide.with(context).load(listaFilmes[position].capaFilmes).centerCrop().into(holder.capa)
 
     }
 

@@ -11,7 +11,7 @@ import com.yorran.movieapp.models.ListaFilmes
 
 //Adapter das Categorias de filmes
 //Parametro listaCategoria irá criar uma lista usando a class CategoriaFilmes
-class AdapterCategoria(private val context : Context, private val listaCategoria: MutableList<CategoriaFilmes>, private val listafilmes : MutableList<ListaFilmes>):
+class AdapterCategoria(private val context : Context, val listaCategoria: MutableList<CategoriaFilmes>):
     RecyclerView.Adapter<AdapterCategoria.CategoriaViewHolder>() {
 
 
@@ -27,7 +27,7 @@ class AdapterCategoria(private val context : Context, private val listaCategoria
         val positionItem = listaCategoria[position]
         //Variavel que pegará a posição das informações que estão contidas no ListaCategoria
         holder.titulo.text = listaCategoria[position].titulo
-        holder.filmes.adapter = AdapterFilmes(context, listafilmes)
+        holder.filmes.adapter = AdapterFilmes(context, positionItem.listaFilmes)
         //Configuração da orientação
         holder.filmes.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
