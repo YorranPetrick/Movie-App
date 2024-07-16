@@ -56,6 +56,7 @@ class MovieHomeFragment : Fragment() {
                     response.body()?.let {
                         adapterCategorias.listaCategoria.addAll(it.nomeCategoria)
                         fragmentMovieHomeBinding.recycleViewCategorias.adapter = adapterCategorias
+                        fragmentMovieHomeBinding.BarraProgresso.visibility = View.GONE
                         //Notificando a lista semppre que for atualizado
                         adapterCategorias.notifyDataSetChanged()
 

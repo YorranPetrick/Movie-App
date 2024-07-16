@@ -14,6 +14,9 @@ data class CategoriaFilmes (
 data class ListaFilmes(
     @SerializedName("id") val id :Int = 0,
     @SerializedName("url_imagem") val capaFilmes: String? = null,
+    @SerializedName("nome") val nome : String ? = null,
+    @SerializedName("descricao") val descricao : String ? =null,
+    @SerializedName("elenco") val elenco : String ? =null
 
 )
 

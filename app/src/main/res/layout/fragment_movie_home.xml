@@ -3,12 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MovieHomeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView_Categorias"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/BarraProgresso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/blue_button"
+        android:visibility="visible"
         />
 
 </FrameLayout>
